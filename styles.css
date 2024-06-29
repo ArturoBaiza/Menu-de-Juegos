@@ -1,0 +1,94 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1b1b1b;
+  margin: 0;
+  background-image: url('bowser.webp'), url('mario.png');
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto 80%, auto 80%;
+}
+
+.container {
+  text-align: center;
+  max-width: 800px; /* Ajusta el ancho máximo del contenido */
+  margin: 0 auto; /* Centra el contenido horizontalmente */
+  padding: 0 20px; /* Añade espacio interno al contenedor */
+}
+
+.title {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: grid;
+  gap: 20px;
+  text-align: center;
+}
+
+.game {
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transiciones para hover y transformación */
+  font-family: 'Press Start 2P', cursive;
+  position: relative;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.mario {
+  background-color: #e74c3c;
+}
+
+.luigi {
+  background-color: #3498db;
+}
+
+.peach {
+  background-color: #ff99cc;
+}
+
+.bowser {
+  background-color: #4a235a;
+}
+
+.game:hover {
+  opacity: 0.9;
+  transform: translateY(-5px); /* Levantar el botón al pasar el mouse */
+}
+
+/* Media queries para hacer la página responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px; /* Reducir el espacio interno en pantallas pequeñas */
+  }
+
+  .title {
+    font-size: 1.5em; /* Reducir el tamaño del título en pantallas pequeñas */
+  }
+
+  .game {
+    font-size: 1.2em; /* Ajustar el tamaño de letra de los botones en pantallas pequeñas */
+  }
+}
+
+/* Estilo de letra "Press Start 2P" */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
